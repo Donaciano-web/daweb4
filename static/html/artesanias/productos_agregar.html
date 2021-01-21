@@ -1,0 +1,105 @@
+<!--<div class="mx-auto m-3 p-3">-->
+    <div class="card border-0 p-0">
+        <div class="centrado card-header" >
+            <h5 class="m-0">Agregar Productos</h5>
+        </div>
+        <div class="card-body shadow rounded" >
+            <form action="/artesanias/productos/guardar" method="POST" enctype="multipart/form-data"> 
+                <div class="container-fluid">
+                                        <div class="row m-0">
+                                            <div class="col-sm-12 col-md-12 col-lg-6 pr-3 input-images">
+                                                
+                                            
+                                            </div>
+                                           
+                                            
+                                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="producto">Producto:</label>
+                                                    <input type="text" class="form-control placeholder-shown" id="producto"  name="producto">
+                                                    
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="descripcion">Descripción:</label>
+                                                    <textarea class="form-control" rows="4" id="descripcion" name="descripcion"></textarea>
+                                                    
+                                                </div>
+                                            
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="clasificacion_id">Clasificación:</label>
+                    
+                                                        <select class="custom-select mt-2 mb-2" name="clasificacion_id" id="clasificacion_id">
+                                                            <option value="0" class="p-1">Ninguno</option>
+                                                            <!--LISTADO_CLASIFICACION-->
+                                                            <option value="{id}">{descripcion}</option>
+                                                            <!--LISTADO_CLASIFICACION-->
+                                                        </select>
+                
+                                                    
+                                                </div>
+
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-lg-6">
+                                                <div class="form-group">
+                                                    <label for="artesano_id">Artesanos:</label>
+                    
+                                                        <select class="custom-select mt-2 mb-2" name="artesano_id" id="artesano_id">
+                                                            <option value="0" class="p-1">Ninguno</option>
+                                                            <!--LISTADO_ARTESANOS-->
+                                                            <option value="{id}">{nombres}</option>
+                                                            <!--LISTADO_ARTESANOS-->
+                                                        </select>
+                
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="form-group">
+                                                    <label for="precio">Precio:</label>
+                                                    <input type="number" class="form-control placeholder-shown" id="precio" name="precio">
+                                                </div>
+                            
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6">
+                            <div class="form-group">
+                                                    <label for="existencias">Existencia:</label>
+                                                    <input type="number" class="form-control placeholder-shown" id="existencias" name="existencias">
+                                                </div>
+                                
+                        </div>
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group" align="right">
+                                        <input type="submit" class="btn btn-info" name="" value="Guardar">
+                            </div>
+                            
+                                
+                        </div>
+                        
+                        
+                    </div>
+                                
+                                            
+                                            
+                                                
+                                              
+                                            </div>
+                                            
+                                        
+                                        
+                                        
+                                                                 
+            </form>
+        </div>
+    </div>
+<!--</div>-->

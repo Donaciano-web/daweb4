@@ -1,0 +1,27 @@
+<!--<div class="mx-auto m-3 p-3">-->
+    <div class="card border-0 p-0" >
+        <div class="centrado card-header" >
+            <h5 class="m-0">Agregar rol</h5>
+        </div>
+<div class="card-body shadow rounded" >
+            <form action="/artesanias/roles/guardar" 
+                method="POST">
+                <div class="row">
+  <div class="col-sm-4">
+                        <label for="descripcion">rol: </label>
+                    </div>
+                    <div class="col-sm-8 mb-2">
+                        <input type="text" class="form-control" 
+                        name="descripcion" id="descripcion"
+                        required maxlength="50">
+                    </div>
+</div>
+                
+
+                <div style="text-align: center;">
+                    <input type="submit" class="btn btn-primary" value="Guardar">
+                </div>
+   </form>
+        </div>
+    </div>
+<!--</div>-->

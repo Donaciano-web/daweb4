@@ -1,0 +1,50 @@
+<!--<div class="mx-auto m-3 p-3">-->
+                    <div class="card border-0 p-0">
+        <div class="card-header">
+            <h5 class="m-0">Listado de pedidos</h5>
+        </div>
+        <div class="card-body shadow rounded" >
+            <table class="table table-bordered" >
+                <caption>Pág. 1 </caption>
+                <thead class="thead-light ">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">FECHA</th>
+                        <th scope="col">CLIENTE</th>
+                        <th scope="col">FORMAPAGO</th>
+                        <th scope="col">DOMICILIO</th>
+                        <th scope="col" colspan="2">ACCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--LISTADO_PEDIDOS-->
+                    <tr>
+                        <td>{id}</td>
+                        <td>{fecha}</td>
+                        <td>{cliente_id}</td>
+                        <td>{formapago}</td>
+                        <td>{domicilio}</td>
+                        <td>
+                            <a href="/artesanias/pedidos/editar/{id} " class="text-success">
+                                Editar
+                                <!--
+                                <img src="/static/img/edit.jpg" width="48" alt="edit" title="Editar el elemento actual "/>-->
+                            </a> 
+                        </td>
+                        <td>                              
+                            <a href="/artesanias/pedidos/eliminar/{id} "
+                            onclick="return confirm( 'Esta seguro de Borrar {descripcion}') " class="text-warning">
+                            Eliminar
+
+                               <!-- <img src="/static/img/delete.jpg" width="48" alt="delete" title="Borrar el elemento actual "/>-->
+                            </a> 
+                        </td>
+
+
+                    </tr>
+                    <!--LISTADO_PEDIDOS-->
+                </tbody>
+            </table>
+            </div>
+        </div>
+<!--</div>-->
